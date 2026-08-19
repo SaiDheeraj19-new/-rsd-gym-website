@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Forge Fitness programs: strength, powerlifting, conditioning, mobility, endurance, and personal coaching. Includes a BMI calculator.">
+  <title>Programs | Forge Fitness Club</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="shell nav-wrap">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">FF</span>
+        <span class="logo-copy">FORGE<small>FITNESS CLUB</small></span>
+      </a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html" class="active">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="membership.html">Join now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="shell page-hero">
+      <p class="eyebrow">PROGRAMS</p>
+      <h1 class="display">A track for<br><em>your goal.</em></h1>
+      <p class="lede">Six coached programs, one progression system. Start where you are, measure what matters, and change tracks when your goal changes.</p>
+    </section>
+
+    <section class="shell section">
+      <div class="grid-3">
+        <article class="card reveal">
+          <span class="card-number">PROGRAM / 01</span>
+          <div class="card-icon" aria-hidden="true">▰</div>
+          <h3>Strength Foundations</h3>
+          <p>Six weeks of squat, hinge, press, and pull technique. The right entry point if you have never trained with a barbell.</p>
+          <ul class="card-tags"><li>3 days / week</li><li>Beginner</li><li>60 min</li></ul>
+        </article>
+        <article class="card reveal">
+          <span class="card-number">PROGRAM / 02</span>
+          <div class="card-icon" aria-hidden="true">▮</div>
+          <h3>Powerlifting</h3>
+          <p>Squat, bench, and deadlift with block periodisation, technique review, and meet-style practice.</p>
+          <ul class="card-tags"><li>4 days / week</li><li>Intermediate</li><li>90 min</li></ul>
+        </article>
+        <article class="card reveal">
+          <span class="card-number">PROGRAM / 03</span>
+          <div class="card-icon" aria-hidden="true">⌁</div>
+          <h3>Metabolic Conditioning</h3>
+          <p>Intervals, sled work, carries, and circuits. Short sessions that build work capacity without stealing from recovery.</p>
+          <ul class="card-tags"><li>2–3 days / week</li><li>All levels</li><li>45 min</li></ul>
+        </article>
+        <article class="card reveal">
+          <span class="card-number">PROGRAM / 04</span>
+          <div class="card-icon" aria-hidden="true">◌</div>
+          <h3>Mobility &amp; Recovery</h3>
+          <p>Guided joint work for hips, shoulders, and spine, plus breathing and down-regulation practice.</p>
+          <ul class="card-tags"><li>2 days / week</li><li>All levels</li><li>40 min</li></ul>
+        </article>
+        <article class="card reveal">
+          <span class="card-number">PROGRAM / 05</span>
+          <div class="card-icon" aria-hidden="true">↗</div>
+          <h3>Endurance Base</h3>
+          <p>Aerobic base building for members who want to run, cycle, or hike with more ease and fewer niggles.</p>
+          <ul class="card-tags"><li>3 days / week</li><li>All levels</li><li>50 min</li></ul>
+        </article>
+        <article class="card reveal">
+          <span class="card-number">PROGRAM / 06</span>
+          <div class="card-icon" aria-hidden="true">✦</div>
+          <h3>Personal Coaching</h3>
+          <p>One-to-one programming and weekly check-ins for a specific goal, schedule, or return from injury.</p>
+          <ul class="card-tags"><li>By application</li><li>1:1</li><li>Flexible</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell section" id="bmi">
+      <div class="bmi-panel">
+        <div>
+          <p class="eyebrow">QUICK CHECK</p>
+          <h2>BMI calculator</h2>
+          <p>Body mass index is a rough screening number, not a diagnosis. Use it as one data point alongside how you train, eat, and feel.</p>
+          <p class="note">Metric units. For a more useful conversation, book a walkthrough and we will look at the whole picture.</p>
+        </div>
+        <form class="bmi-form" id="bmi-form" novalidate>
+          <div class="field">
+            <label for="weight">Weight (kg)</label>
+            <input id="weight" name="weight" type="number" min="1" step="0.1" placeholder="e.g. 72" required>
+          </div>
+          <div class="field">
+            <label for="height">Height (cm)</label>
+            <input id="height" name="height" type="number" min="50" step="0.1" placeholder="e.g. 175" required>
+          </div>
+          <div class="result-box" id="bmi-result" role="status" aria-live="polite">Enter your weight and height to calculate.</div>
+          <button class="btn" type="submit">Calculate BMI</button>
+          <p class="note">BMI is a screening measure and is not medical advice.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="shell section">
+      <div class="cta-band">
+        <h2>Not sure where<br>to start?</h2>
+        <a class="btn" href="contact.html">Talk to a coach <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <b>FORGE FITNESS CLUB</b>
+          <p>Strength, conditioning, and mobility coaching in Kurnool. Train with intent, recover with purpose.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="trainers.html">Trainers</a>
+          <a href="membership.html">Membership</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-credit">Designed &amp; built by <b>R Sai Dheeraj</b> · Roll no. <b>24ATA05269</b> · © <span id="year">2026</span> Forge Fitness Club</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
